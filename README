@@ -1,0 +1,44 @@
+steps for running the application
+1) gradle clean build
+
+2) java -jar build/libs/cacheApp-0.0.1-SNAPSHOT.jar
+
+
+
+Sample Output:
+
+java -jar build/libs/cacheApp-0.0.1-SNAPSHOT.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.1.RELEASE)
+
+2017-02-06 02:24:33.693  INFO 52431 --- [           main] com.CacheAppApplication                  : Starting CacheAppApplication on PRINHYLTPAP0434-2.local with PID 52431 (/Users/umam/Downloads/cacheApp/build/libs/cacheApp-0.0.1-SNAPSHOT.jar started by umam in /Users/umam/Downloads/cacheApp)
+2017-02-06 02:24:33.699  INFO 52431 --- [           main] com.CacheAppApplication                  : No active profile set, falling back to default profiles: default
+2017-02-06 02:24:33.847  INFO 52431 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41906a77: startup date [Mon Feb 06 02:24:33 IST 2017]; root of context hierarchy
+2017-02-06 02:24:34.956  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Evicting Stale Data
+2017-02-06 02:24:34.966  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Sleeping for 5000millis
+2017-02-06 02:24:35.226  INFO 52431 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-06 02:24:35.248  INFO 52431 --- [           main] com.util.DataLoader                      : loading ref table data
+2017-02-06 02:24:35.249  INFO 52431 --- [           main] com.cache.CacheManager                   : adding cacheREF_COUNTRY_1
+2017-02-06 02:24:35.254  INFO 52431 --- [           main] com.cache.CacheManager                   : adding cacheREF_CURRENCY_11
+2017-02-06 02:24:35.255  INFO 52431 --- [           main] com.cache.CacheManager                   : adding cacheREF_HOLIDAY_111
+2017-02-06 02:24:35.256  INFO 52431 --- [           main] com.CacheAppApplication                  : Country..RefCountry{countryId=1, countryCd='countryCd', countryName='IND', statusInd=1, lastModifyDt=Mon Feb 06 02:24:35 IST 2017, modifyPersonNum=222}
+2017-02-06 02:24:35.256  INFO 52431 --- [           main] com.CacheAppApplication                  : Currency..RefCurrency{currId=11, currCd='currCd', currName='USR', currencySymbol='$', statusInd=1, lastModifyDt=Mon Feb 06 02:24:35 IST 2017, modifyPersonNum=222}
+2017-02-06 02:24:35.256  INFO 52431 --- [           main] com.CacheAppApplication                  : Holiday..RefHoliday{holidayId=111, holidayCd='holidayCd', holidayName='New Year', holidayDt=Mon Feb 06 02:24:35 IST 2017, statusInd=1, lastModifyDt=Mon Feb 06 02:24:35 IST 2017, modifyPersonNum=222}
+2017-02-06 02:24:39.967  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Evicting Stale Data
+2017-02-06 02:24:39.968  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Sleeping for 5000millis
+2017-02-06 02:24:44.969  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Evicting Stale Data
+2017-02-06 02:24:44.970  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Sleeping for 5000millis
+2017-02-06 02:24:49.971  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Evicting Stale Data
+2017-02-06 02:24:49.971  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Removing...com.cache.CacheObject@7f23c5bc
+2017-02-06 02:24:49.971  INFO 52431 --- [onPool-worker-1] com.cache.CacheCleaner                   : Removing...com.cache.CacheObject@4894453e
+2017-02-06 02:24:49.972  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Removing...com.cache.CacheObject@570d03d7
+2017-02-06 02:24:49.972  INFO 52431 --- [       Thread-2] com.cache.CacheCleaner                   : Sleeping for 5000millis
+2017-02-06 02:24:50.261  INFO 52431 --- [           main] com.CacheAppApplication                  : Started CacheAppApplication in 17.432 seconds (JVM running for 18.11)
+2017-02-06 02:24:50.262  INFO 52431 --- [       Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@41906a77: startup date [Mon Feb 06 02:24:33 IST 2017]; root of context hierarchy
+2017-02-06 02:24:50.264  INFO 52431 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
